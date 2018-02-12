@@ -223,7 +223,7 @@ namespace Shutdown_by_ME_2
 
         private void _btn1minP_Click(object sender, EventArgs e)
         {
-            AddTimeSpan(new TimeSpan(0, 0, 5));
+            AddTimeSpan(new TimeSpan(0, 1, 0));
         }        
 
         private void _btn1minM_Click(object sender, EventArgs e)
