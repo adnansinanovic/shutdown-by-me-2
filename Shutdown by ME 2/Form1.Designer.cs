@@ -197,7 +197,7 @@
             this._btn6hourM.Name = "_btn6hourM";
             this._btn6hourM.Size = new System.Drawing.Size(75, 23);
             this._btn6hourM.TabIndex = 11;
-            this._btn6hourM.Text = "- 6 h ours";
+            this._btn6hourM.Text = "- 6 hours";
             this._btn6hourM.UseVisualStyleBackColor = true;
             this._btn6hourM.Click += new System.EventHandler(this._btn6hourM_Click);
             // 
@@ -213,7 +213,7 @@
             // 
             // _btn15minM
             // 
-            this._btn15minM.Location = new System.Drawing.Point(3, 90);
+            this._btn15minM.Location = new System.Drawing.Point(3, 61);
             this._btn15minM.Name = "_btn15minM";
             this._btn15minM.Size = new System.Drawing.Size(75, 23);
             this._btn15minM.TabIndex = 5;
@@ -223,7 +223,7 @@
             // 
             // _btn5minM
             // 
-            this._btn5minM.Location = new System.Drawing.Point(3, 61);
+            this._btn5minM.Location = new System.Drawing.Point(3, 32);
             this._btn5minM.Name = "_btn5minM";
             this._btn5minM.Size = new System.Drawing.Size(75, 23);
             this._btn5minM.TabIndex = 3;
@@ -233,7 +233,7 @@
             // 
             // _btn30minM
             // 
-            this._btn30minM.Location = new System.Drawing.Point(3, 32);
+            this._btn30minM.Location = new System.Drawing.Point(3, 90);
             this._btn30minM.Name = "_btn30minM";
             this._btn30minM.Size = new System.Drawing.Size(75, 23);
             this._btn30minM.TabIndex = 7;
@@ -261,13 +261,13 @@
             this._btn1dayM.UseVisualStyleBackColor = true;
             this._btn1dayM.Click += new System.EventHandler(this._btn1dayM_Click);
             // 
-            // _lblRemainingTime
+            // _lblCountdown
             // 
             this._lblCountdown.Dock = System.Windows.Forms.DockStyle.Right;
             this._lblCountdown.Font = new System.Drawing.Font("Bahnschrift SemiBold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._lblCountdown.ForeColor = System.Drawing.Color.Red;
-            this._lblCountdown.Location = new System.Drawing.Point(0, 0);
-            this._lblCountdown.Name = "_lblRemainingTime";
+            this._lblCountdown.Location = new System.Drawing.Point(1, 0);
+            this._lblCountdown.Name = "_lblCountdown";
             this._lblCountdown.Size = new System.Drawing.Size(333, 39);
             this._lblCountdown.TabIndex = 16;
             this._lblCountdown.Text = "0.00:00:00";
@@ -278,7 +278,7 @@
             this._lblShutdownTime.Dock = System.Windows.Forms.DockStyle.Right;
             this._lblShutdownTime.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._lblShutdownTime.ForeColor = System.Drawing.Color.Red;
-            this._lblShutdownTime.Location = new System.Drawing.Point(0, 0);
+            this._lblShutdownTime.Location = new System.Drawing.Point(1, 0);
             this._lblShutdownTime.Name = "_lblShutdownTime";
             this._lblShutdownTime.Size = new System.Drawing.Size(333, 39);
             this._lblShutdownTime.TabIndex = 17;
@@ -370,7 +370,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(14, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.ShowUpDown = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(224, 39);
+            this.dateTimePicker1.Size = new System.Drawing.Size(224, 40);
             this.dateTimePicker1.TabIndex = 1;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -443,9 +443,9 @@
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this._btn1minM);
-            this.flowLayoutPanel2.Controls.Add(this._btn30minM);
             this.flowLayoutPanel2.Controls.Add(this._btn5minM);
             this.flowLayoutPanel2.Controls.Add(this._btn15minM);
+            this.flowLayoutPanel2.Controls.Add(this._btn30minM);
             this.flowLayoutPanel2.Controls.Add(this._btn1hourM);
             this.flowLayoutPanel2.Controls.Add(this._btn6hourM);
             this.flowLayoutPanel2.Controls.Add(this._btn12hourM);
@@ -462,7 +462,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.85321F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.14679F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this._lblCurrentTime, 0, 3);
@@ -485,7 +485,7 @@
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Right;
             this.label2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 45);
+            this.label2.Location = new System.Drawing.Point(5, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 45);
             this.label2.TabIndex = 19;
@@ -497,7 +497,7 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 0);
+            this.label1.Location = new System.Drawing.Point(11, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 45);
             this.label1.TabIndex = 18;
@@ -516,7 +516,7 @@
             // 
             // _btnExit
             // 
-            this._btnExit.Location = new System.Drawing.Point(330, 120);
+            this._btnExit.Location = new System.Drawing.Point(328, 120);
             this._btnExit.Name = "_btnExit";
             this._btnExit.Size = new System.Drawing.Size(75, 23);
             this._btnExit.TabIndex = 21;
@@ -530,9 +530,9 @@
             this.tableLayoutPanel1.SetColumnSpan(this.panel1, 2);
             this.panel1.Controls.Add(this._lblCountdown);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(81, 3);
+            this.panel1.Location = new System.Drawing.Point(80, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(333, 39);
+            this.panel1.Size = new System.Drawing.Size(334, 39);
             this.panel1.TabIndex = 22;
             // 
             // panel2
@@ -541,9 +541,9 @@
             this.tableLayoutPanel1.SetColumnSpan(this.panel2, 2);
             this.panel2.Controls.Add(this._lblShutdownTime);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(81, 48);
+            this.panel2.Location = new System.Drawing.Point(80, 48);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(333, 39);
+            this.panel2.Size = new System.Drawing.Size(334, 39);
             this.panel2.TabIndex = 23;
             // 
             // Form1
